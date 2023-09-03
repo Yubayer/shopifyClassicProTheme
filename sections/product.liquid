@@ -1,6 +1,7 @@
 <h1>{{ product.title }}</h1>
 {% form 'product', product %}
   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+  <input type="number" name="quantity" value="1" min="1">
   <button>Add To Cart</button>
   {{ form | payment_button }}
 {% endform %}
