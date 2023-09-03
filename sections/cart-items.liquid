@@ -1,5 +1,6 @@
 {% for item in cart.items %}
   <a href="{{ item.url }}">
+    {{ item.image | image_url: width: 100 | image_tag }}
     <h2>{{ item.title }}</h2>
     <h2>{{ item.quantity }}</h2>
     <h2>{{ item.line_price | money }}</h2>
