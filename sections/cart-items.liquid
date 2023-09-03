@@ -1,3 +1,11 @@
+{% for item in cart.items %}
+  <a href="{{ item.url }}">
+    <h2>{{ item.title }}</h2>
+    <h2>{{ item.quantity }}</h2>
+    <h2>{{ item.line_price | money }}</h2>
+  </a>
+{% endfor %}
+
 {% schema %}
   {
     "name": "Cart Items",
