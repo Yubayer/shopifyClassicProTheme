@@ -1,4 +1,8 @@
 <h1>{{ product.title }}</h1>
+{% form 'product', product %}
+  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+  <button>Add To Cart</button>
+{% endform %}
 {% schema %}
   {
     "name": "Product",
