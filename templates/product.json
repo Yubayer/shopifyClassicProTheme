@@ -4,9 +4,15 @@
       "type": "banner",
       "settings": {
       }
+    },
+    "6c54facd-fa6d-4be1-ba15-38463df10b78": {
+      "type": "product",
+      "settings": {
+      }
     }
   },
   "order": [
-    "banner"
+    "banner",
+    "6c54facd-fa6d-4be1-ba15-38463df10b78"
   ]
 }
